@@ -1,0 +1,29 @@
+✅ 1. Open Terminal in VS Code
+Ctrl + `
+
+✅ 2. Initialize a Git Repository (if not already)
+git init
+
+✅3. Add All Files to Git (Stage)
+git add .
+
+✅ 4. Commit Your Code
+git commit -m "Initial commit"
+
+✅ 5. Connect to GitHub Repository
+git remote add origin https://github.com/shubham-pattewar/Python-Codes.git
+
+✅ 6. Rename Branch to Main (optional but recommended)
+git branch -M main
+
+❌ 7. If You See the Error: rejected main -> main (fetch first)
+git pull origin main --rebase
+
+✅ 8. Now Push Your Code to GitHub
+git push -u origin main
+
+
+Update the Code:
+git add .
+git commit -m "Updated code"
+git push -u origin main / git push
