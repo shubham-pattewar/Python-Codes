@@ -14,3 +14,4 @@ print("Total Number of Words: ", counter)
 
 print("Total Number of Count: ", str.count(' '))
 
+
