@@ -1,7 +1,3 @@
-# Write a program to analyse two different word files/paragraphs where you need to do following tasd
-# 1. Find all unique words used in each paragraph
-# 2. Identify the common words between both paragraphs
-# 3. Display total count of unique word found in both paragraphs
 
 # string double single triple
 # positive and negative index

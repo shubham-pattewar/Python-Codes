@@ -6,12 +6,23 @@
 # 5. Count the number of vowels in the entire text 
 # 6. Sort the string with conversion of original string into the reverse ascending order
 
-str = "Hello How are you are How"
+from collections import Counter
 
-words = str.split()
-counter = len(words)
-print("Total Number of Words: ", counter)
+text = input("Enter your text:\n")
 
-print("Total Number of Count: ", str.count(' '))
+words = text.split()
+word_count = len(words)
+space_count = text.count(' ')
+word_freq = Counter(words)
+top_3 = word_freq.most_common(3)
+vowel_count = sum(1 for c in text.lower() if c in 'aeiou')
+sorted_text = ''.join(sorted(text, reverse=True))
+
+print("Total words:", word_count)
+print("Total spaces:", space_count)
+print("Word frequencies:", dict(word_freq))
+print("Top 3 frequent words:", top_3)
+print("Total vowels:", vowel_count)
+print("Reversed sorted string:", sorted_text)
 
 
