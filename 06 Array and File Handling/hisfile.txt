@@ -1,0 +1,2 @@
+Hello a***NEW TEXT***ey there added a new line
+Writing after append
