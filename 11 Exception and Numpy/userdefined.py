@@ -20,3 +20,25 @@ except MinorError as e:
 
 except MajorError as e:
     print("Error: ", e)
+
+
+
+
+# Define a custom exception
+class MyCustomException(Exception):
+    def __init__(self, message):
+        super().__init__(message)
+
+# Function that may raise the custom exception
+def check_number(number):
+    if number < 0:
+        raise MyCustomException(f"Number cannot be negative: {number}")
+    else:
+        print(f"Number is valid: {number}")
+
+# Using the custom exception
+try:
+    check_number(10)   # Valid
+    check_number(-5)   # This will raise the custom exception
+except MyCustomException as e:
+    print(f"Caught exception: {e}")
