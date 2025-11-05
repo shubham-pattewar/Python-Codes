@@ -1,0 +1,24 @@
+1 — Create virtual environment & install Django
+# create project folder and enter it
+mkdir django_login_regex
+cd django_login_regex
+
+# create venv
+python -m venv venv
+
+# activate venv
+# Windows:
+venv\Scripts\activate
+
+# install Django
+pip install django
+
+
+
+2 — Start Django project & app
+# create project named 'mysite'
+django-admin startproject mysite .
+
+# create app named 'accounts'
+python manage.py startapp accounts
+
